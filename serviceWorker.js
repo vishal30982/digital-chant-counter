@@ -38,6 +38,7 @@ self.addEventListener("install", installEvent => {
     caches.open(staticChantCounter).then(cache => {
       cache.addAll(assets)
     }).catch(err => {
+        console.error(`cache error: ${err.message}`);
         self.clients.matchAll().then(clients => {
             clients.forEach(client => {
                 client.postMessage({ type: 'CACHE_ERROR', error: err.message })

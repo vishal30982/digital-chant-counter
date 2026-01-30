@@ -2,7 +2,7 @@
 {
   "name": "Digital Chant Counter",
   "short_name": "Chant counter",
-  "start_url": "https://vishal30982.github.io/digital-chant-counter/",
+  "start_url": "/",
   "display": "fullscreen",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",

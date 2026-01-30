@@ -8,3 +8,9 @@ document.body.onclick = function() {
         });
     }
 }
+
+navigator.serviceWorker.onmessage = (event) => {
+  if (event.data.type === 'CACHE_ERROR') {
+    alert('Cache error: ' + event.data.error)
+  }
+}
